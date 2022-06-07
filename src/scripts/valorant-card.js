@@ -23,7 +23,7 @@ class ValorantCard extends HTMLElement {
                 <div class="ability">
                     ${this._agents.abilities?.map((ability) => `
                         <div>
-                            <img src="${ability.displayIcon}" alt="Icon Ability">
+                            <img src="${ability.displayIcon}" alt="" onerror="this.src=null;this.src='./images/no-image-icon.png'">
                             <div>${ability.displayName}</div>
                         </div>
                     `).join('')}
